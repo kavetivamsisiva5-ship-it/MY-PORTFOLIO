@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+  margin:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  background:#2f3b46;
+}
+
+.container{
+    background-color: blue;
+  width:300px;
+  display:flex;
+  flex-direction:column;
+  color:white;
+  border:3px solid white;
+}
+
+.header,.footer{
+    background-color: green;
+  text-align:center;
+  padding:10px;
+  border-bottom:3px solid white;
+}
+
+.footer{
+    background-color: red;
+  border-top:3px solid white;
+  border-bottom:none;
+}
+
+.main{
+  display:flex;
+  height:150px;
+}
+
+.box{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-right:3px solid white;
+}
+
+.box:last-child{
+  border-right:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header">Header</div>
+  <div class="main">
+    <div class="box">Inbox etc.</div>
+    <div class="box">Message list</div>
+    <div class="box">Message</div>
+  </div>
+  <div class="footer">Footer</div>
+</div>
+
+</body>
+</html>
